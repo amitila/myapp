@@ -8,6 +8,7 @@ import ProfileScreen from './screens/ProfileScreen';
 import AccountScreen from './screens/AccountScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import FeedScreen from './screens/FeedScreen';
+import ExploreScreen from './screens/ExploreScreen';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -24,6 +25,20 @@ function HomeTabs() {
           tabBarIcon: ({ color, size }) => (
             <Icon 
               name="home" 
+              color="blue" 
+              size={20} 
+            />
+          ),
+        }}
+      />
+      <Tab.Screen 
+        name="Explore" 
+        component={ExploreScreen} 
+        options={{
+          tabBarLabel: 'Explore',
+          tabBarIcon: ({ color, size }) => (
+            <Icon 
+              name="wpexplorer" 
               color="blue" 
               size={20} 
             />

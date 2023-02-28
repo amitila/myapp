@@ -1,10 +1,13 @@
-import * as React from 'react';
-import { View, Button, Text } from 'react-native';
+import * as React from "react";
+import { View, Button, Text } from "react-native";
 
-function AccountScreen() {
+function AccountScreen({ navigation }) {
   return (
-    <View>
-      <Text style={{fontSize:100}}>How are you</Text>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Button
+        title="Go to Settings"
+        onPress={() => navigation.navigate("Settings")}
+      />
     </View>
   );
 }
