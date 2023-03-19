@@ -4,13 +4,18 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import ProfileScreen from './screens/ProfileScreen';
-import AccountScreen from './screens/AccountScreen';
-import SettingsScreen from './screens/SettingsScreen';
-import FeedScreen from './screens/FeedScreen';
-import ExploreScreen from './screens/ExploreScreen';
+import ProfileScreen from './screens/home/ProfileScreen';
+import AccountScreen from './screens/home/AccountScreen';
+import SettingsScreen from './screens/home/SettingsScreen';
+import FeedScreen from './screens/home/FeedScreen';
+import ExploreScreen from './screens/home/ExploreScreen';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
+import InfoScreen from './screens/profile/InfoScreen';
+import ImageScreen from './screens/profile/ImageScreen';
+import DocScreen from './screens/profile/DocScreen';
+import TravelScreen from './screens/profile/TravelScreen';
+import LanguageScreen from './screens/profile/LanguageScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -85,6 +90,11 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeTabs} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
+        <Stack.Screen name="Info" component={InfoScreen} />
+        <Stack.Screen name="Image" component={ImageScreen} />
+        <Stack.Screen name="Documentation" component={DocScreen} />
+        <Stack.Screen name="Travel" component={TravelScreen} />
+        <Stack.Screen name="Language" component={LanguageScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

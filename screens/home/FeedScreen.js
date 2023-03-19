@@ -9,17 +9,17 @@ const data = [
   {
     id: 1,
     name: "Ami Neko",
-    url: "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/302429277_1705158236530083_2778884477716421616_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=PXMIaO0yNOgAX82Ku8k&tn=HvTU4fGu9A8eLr-8&_nc_ht=scontent.fsgn2-3.fna&oh=00_AfAOYZ_drZ_vd-L9tB_e9giEN2qwUqgU3jLhKsCJYVqLfw&oe=64017B17",
+    url: "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/302429277_1705158236530083_2778884477716421616_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=jJnpXimwTbIAX_lGQiT&_nc_ht=scontent.fsgn2-3.fna&oh=00_AfDa2sAVTmaP0PgWMA4on3ohLvia1phUSkgwmJ-pQDSVNw&oe=641B3057",
   },
   {
     id: 2,
     name: "Ngọc Sơn",
-    url: "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/273394924_1777734582617651_8343890262031318766_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=kvbkfmt5s20AX-Qwk1E&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfB0IJJbdSgeOgfSnQaT8eE93KYaG03IgsgrTVI104xhMg&oe=6401CEDF",
+    url: "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/273394924_1777734582617651_8343890262031318766_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=sSc6OS9EkUQAX_CB64W&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfCKhr-sJQi29nnrrDjpETB4UEhNXbjZm3s63GiePFI3Nw&oe=641B841F",
   },
   {
     id: 3,
     name: "Nhật Trang",
-    url: "https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/329602626_1236234433636457_3162120989437559236_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dvh_ozHxY3wAX-7Xw_n&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfCvs-6CtJfizMooIYVm4RwAOPx4OLzctKUROq_5lhUbmA&oe=64028369",
+    url: "https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/329602626_1236234433636457_3162120989437559236_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4XZbUYJPQ70AX9aQqb1&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfBM4cvpeCtKowp45Jgdh2YKL7rDsNnjQn4KVxNK1jgf5w&oe=641A3E69",
   },
 ];
 
@@ -75,12 +75,6 @@ export default function FeedScreen({ navigation }) {
           }}
           inactiveDotOpacity={0.4}
           inactiveDotScale={0.6}
-        />
-      </View>
-      <View>
-        <Button
-          title="Go to Settings"
-          onPress={() => navigation.navigate("Settings")}
         />
       </View>
     </View>
